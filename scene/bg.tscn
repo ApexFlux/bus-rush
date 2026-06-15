@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b0tx5e8lnc2oo"]
+
+[ext_resource type="Texture2D" uid="uid://dgg1q3wq8qpb3" path="res://scene/characters/download (4).jpeg" id="1_b3ra5"]
+[ext_resource type="Script" uid="uid://be0rmatpkldil" path="res://scene/bg.gd" id="1_j8iej"]
+
+[node name="BG" type="ParallaxBackground" unique_id=1649111644]
+script = ExtResource("1_j8iej")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=1588480060]
+motion_mirroring = Vector2(700, 0)
+
+[node name="Download(4)" type="Sprite2D" parent="ParallaxLayer" unique_id=677885209]
+texture = ExtResource("1_b3ra5")

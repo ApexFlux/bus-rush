@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://d6jb64krf4qh"]
+
+[ext_resource type="Texture2D" uid="uid://crwoj64bx1dwo" path="res://scene/background/sky.png" id="1_yvtmh"]
+[ext_resource type="Texture2D" uid="uid://duya7ps4f3q4r" path="res://scene/background/skyline.png" id="2_t5faw"]
+[ext_resource type="Texture2D" uid="uid://dd0bnuset33hg" path="res://scene/background/level2_distantBG.png" id="3_t5faw"]
+[ext_resource type="Texture2D" uid="uid://dgkxchdnht6e3" path="res://scene/background/level2_FG.png" id="4_uusna"]
+
+[node name="level2_bg" type="ParallaxBackground" unique_id=828611422]
+
+[node name="sky" type="ParallaxLayer" parent="." unique_id=781734984]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(2634, 0)
+
+[node name="Sky" type="Sprite2D" parent="sky" unique_id=843669004]
+position = Vector2(658.8235, 280)
+scale = Vector2(0.41592392, 0.41666666)
+texture = ExtResource("1_yvtmh")
+
+[node name="Sky2" type="Sprite2D" parent="sky" unique_id=1761135117]
+position = Vector2(1976, 280)
+scale = Vector2(0.41592392, 0.41666666)
+texture = ExtResource("1_yvtmh")
+
+[node name="skyline" type="ParallaxLayer" parent="." unique_id=1668335638]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(2294, 0)
+
+[node name="Skyline" type="Sprite2D" parent="skyline" unique_id=509787691]
+position = Vector2(384.00003, 360)
+scale = Vector2(0.24210538, 0.2440476)
+texture = ExtResource("2_t5faw")
+
+[node name="Skyline2" type="Sprite2D" parent="skyline" unique_id=138145435]
+position = Vector2(1149, 360)
+scale = Vector2(0.24210538, 0.2440476)
+texture = ExtResource("2_t5faw")
+
+[node name="Skyline3" type="Sprite2D" parent="skyline" unique_id=123951345]
+position = Vector2(1911, 360)
+scale = Vector2(0.24210538, 0.2440476)
+texture = ExtResource("2_t5faw")
+
+[node name="distant_bg" type="ParallaxLayer" parent="." unique_id=683781597]
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1984, 0)
+
+[node name="Level2DistantBg" type="Sprite2D" parent="distant_bg" unique_id=496047283]
+position = Vector2(496, 375.99997)
+scale = Vector2(0.277027, 0.277027)
+texture = ExtResource("3_t5faw")
+
+[node name="Level2DistantBg2" type="Sprite2D" parent="distant_bg" unique_id=1423108695]
+position = Vector2(1488, 375.99997)
+scale = Vector2(0.277027, 0.277027)
+texture = ExtResource("3_t5faw")
+
+[node name="foreground" type="ParallaxLayer" parent="." unique_id=484300433]
+motion_mirroring = Vector2(1737, 0)
+
+[node name="Level2Fg" type="Sprite2D" parent="foreground" unique_id=735965239]
+position = Vector2(432.00003, 456)
+scale = Vector2(0.21093746, 0.21093746)
+texture = ExtResource("4_uusna")
+
+[node name="Level2Fg2" type="Sprite2D" parent="foreground" unique_id=1977696414]
+position = Vector2(1302, 456.00003)
+scale = Vector2(0.21093746, 0.21093746)
+texture = ExtResource("4_uusna")

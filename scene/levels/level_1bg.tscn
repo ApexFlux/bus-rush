@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://c6w5ls061st7g"]
+
+[ext_resource type="Texture2D" uid="uid://crwoj64bx1dwo" path="res://scene/background/sky.png" id="1_6vqyv"]
+[ext_resource type="Texture2D" uid="uid://duya7ps4f3q4r" path="res://scene/background/skyline.png" id="2_e0qt5"]
+[ext_resource type="Texture2D" uid="uid://byv2ugv85ejx1" path="res://scene/background/apartment1.png" id="3_210ry"]
+[ext_resource type="Texture2D" uid="uid://bd0v0gl5ftbwu" path="res://scene/background/foreground1.png" id="4_brw5v"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" unique_id=1704693705]
+
+[node name="sky" type="ParallaxLayer" parent="." unique_id=912182118]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(2761, 0)
+
+[node name="Sky" type="Sprite2D" parent="sky" unique_id=1129959188]
+position = Vector2(690.5882, 293.5)
+scale = Vector2(0.4359774, 0.43675596)
+texture = ExtResource("1_6vqyv")
+
+[node name="Sky2" type="Sprite2D" parent="sky" unique_id=1490834942]
+position = Vector2(2071, 293.5)
+scale = Vector2(0.4359774, 0.43675596)
+texture = ExtResource("1_6vqyv")
+
+[node name="distant_skyline" type="ParallaxLayer" parent="." unique_id=972937070]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(1592, 0)
+
+[node name="Skyline" type="Sprite2D" parent="distant_skyline" unique_id=1181029522]
+position = Vector2(399.99997, 416.99997)
+scale = Vector2(0.25148803, 0.2514881)
+texture = ExtResource("2_e0qt5")
+
+[node name="Skyline2" type="Sprite2D" parent="distant_skyline" unique_id=814068740]
+position = Vector2(1196, 416.99997)
+scale = Vector2(0.25148803, 0.2514881)
+texture = ExtResource("2_e0qt5")
+
+[node name="apartment_layer" type="ParallaxLayer" parent="." unique_id=1311676450]
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1968, 0)
+
+[node name="Apartment1" type="Sprite2D" parent="apartment_layer" unique_id=761255790]
+position = Vector2(328, 457)
+scale = Vector2(0.20684527, 0.20684524)
+texture = ExtResource("3_210ry")
+
+[node name="Apartment2" type="Sprite2D" parent="apartment_layer" unique_id=809720597]
+position = Vector2(984.00006, 457)
+scale = Vector2(0.20684527, 0.20684524)
+texture = ExtResource("3_210ry")
+
+[node name="Apartment3" type="Sprite2D" parent="apartment_layer" unique_id=589915972]
+position = Vector2(1640.0001, 457)
+scale = Vector2(0.20684527, 0.20684524)
+texture = ExtResource("3_210ry")
+
+[node name="urban_chaos_layer" type="ParallaxLayer" parent="." unique_id=766838297]
+
+[node name="traffic_infrastructure" type="ParallaxLayer" parent="." unique_id=1555840470]
+
+[node name="foreground_urban_detail" type="ParallaxLayer" parent="." unique_id=543044013]
+motion_mirroring = Vector2(1452, 0)
+
+[node name="Foreground1" type="Sprite2D" parent="foreground_urban_detail" unique_id=1171220299]
+position = Vector2(363.00003, 499)
+scale = Vector2(0.25780252, 0.2578026)
+texture = ExtResource("4_brw5v")
+
+[node name="Foreground2" type="Sprite2D" parent="foreground_urban_detail" unique_id=53237625]
+position = Vector2(1089, 499)
+scale = Vector2(0.25780252, 0.2578026)
+texture = ExtResource("4_brw5v")

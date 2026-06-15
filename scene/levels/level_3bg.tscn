@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bhxf15fe864v5"]
+
+[ext_resource type="Texture2D" uid="uid://crwoj64bx1dwo" path="res://scene/background/sky.png" id="1_m8t52"]
+[ext_resource type="Texture2D" uid="uid://duya7ps4f3q4r" path="res://scene/background/skyline.png" id="2_5che0"]
+[ext_resource type="Texture2D" uid="uid://tm0xwbdslvhi" path="res://scene/background/level3_distant2.png" id="3_agnlw"]
+[ext_resource type="Texture2D" uid="uid://blsl4gi0q7ssc" path="res://scene/background/level3_distant.png" id="4_xli45"]
+
+[node name="level3_bg" type="ParallaxBackground" unique_id=482342009]
+
+[node name="sky" type="ParallaxLayer" parent="." unique_id=523056937]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(2634, 0)
+
+[node name="Sky" type="Sprite2D" parent="sky" unique_id=1950469366]
+position = Vector2(658.8235, 280)
+scale = Vector2(0.41592392, 0.41666666)
+texture = ExtResource("1_m8t52")
+
+[node name="Sky2" type="Sprite2D" parent="sky" unique_id=4335252]
+position = Vector2(1976, 280)
+scale = Vector2(0.41592392, 0.41666666)
+texture = ExtResource("1_m8t52")
+
+[node name="skyline" type="ParallaxLayer" parent="." unique_id=444836444]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(2294, 0)
+
+[node name="Skyline" type="Sprite2D" parent="skyline" unique_id=5277298]
+position = Vector2(384.00003, 360)
+scale = Vector2(0.24210538, 0.2440476)
+texture = ExtResource("2_5che0")
+
+[node name="Skyline2" type="Sprite2D" parent="skyline" unique_id=637878732]
+position = Vector2(1149, 360)
+scale = Vector2(0.24210538, 0.2440476)
+texture = ExtResource("2_5che0")
+
+[node name="Skyline3" type="Sprite2D" parent="skyline" unique_id=1304804318]
+position = Vector2(1911, 360)
+scale = Vector2(0.24210538, 0.2440476)
+texture = ExtResource("2_5che0")
+
+[node name="distant" type="ParallaxLayer" parent="." unique_id=841580213]
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(4175, 0)
+
+[node name="Level3Distant2" type="Sprite2D" parent="distant" unique_id=1374908372]
+position = Vector2(531.38513, 386)
+scale = Vector2(0.29391897, 0.29391894)
+texture = ExtResource("3_agnlw")
+
+[node name="Level3Distant4" type="Sprite2D" parent="distant" unique_id=1564994454]
+position = Vector2(1584, 386)
+scale = Vector2(0.29391897, 0.29391894)
+texture = ExtResource("3_agnlw")
+
+[node name="Level3Distant" type="Sprite2D" parent="distant" unique_id=1704606750]
+position = Vector2(2616, 384)
+scale = Vector2(0.29194632, 0.29729727)
+texture = ExtResource("4_xli45")
+
+[node name="Level3Distant3" type="Sprite2D" parent="distant" unique_id=1323610684]
+position = Vector2(3656.0002, 384)
+scale = Vector2(0.29194632, 0.29729727)
+texture = ExtResource("4_xli45")

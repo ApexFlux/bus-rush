@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://b2hwgq3vvcoxc"]
+
+[ext_resource type="Script" uid="uid://42csfuqeq4mk" path="res://scene/menu.gd" id="1_e5g8k"]
+[ext_resource type="PackedScene" uid="uid://b0tx5e8lnc2oo" path="res://scene/bg.tscn" id="2_8hxod"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_e5g8k"]
+
+[node name="menu" type="Node2D" unique_id=1705793671]
+script = ExtResource("1_e5g8k")
+
+[node name="level1" type="Button" parent="." unique_id=181233976]
+offset_left = -32.0
+offset_top = -56.0
+offset_right = 30.0
+offset_bottom = -25.0
+text = "Level 1"
+
+[node name="level2" type="Button" parent="." unique_id=1079540418]
+offset_left = -32.0
+offset_top = -16.0
+offset_right = 30.0
+offset_bottom = 15.0
+text = "Level 2"
+
+[node name="level3" type="Button" parent="." unique_id=1131866909]
+offset_left = -32.0
+offset_top = 24.0
+offset_right = 30.0
+offset_bottom = 55.0
+text = "Level 3"
+
+[node name="return" type="Button" parent="." unique_id=1886412982]
+offset_left = -240.0
+offset_top = -128.0
+offset_right = -180.0
+offset_bottom = -104.0
+text = "return"
+icon = SubResource("ViewportTexture_e5g8k")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=888649988]
+zoom = Vector2(2, 2)
+
+[node name="BG" parent="." unique_id=1649111644 instance=ExtResource("2_8hxod")]
+
+[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
+[connection signal="button_down" from="level3" to="." method="_on_level_3_button_down"]
+[connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="return" to="." method="_on_return_pressed"]

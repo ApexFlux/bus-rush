@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://djpbqsrvs4j8w"]
+
+[ext_resource type="Script" uid="uid://ekkx51ew3m0o" path="res://scene/main.gd" id="1_itxqv"]
+[ext_resource type="PackedScene" uid="uid://b0tx5e8lnc2oo" path="res://scene/bg.tscn" id="2_v0l8b"]
+[ext_resource type="Texture2D" uid="uid://dwvc7ag7mokdo" path="res://scene/logo.png" id="3_wp4xf"]
+
+[node name="main" type="Node2D" unique_id=1410822908]
+script = ExtResource("1_itxqv")
+
+[node name="play" type="Button" parent="." unique_id=1012945926]
+offset_left = -80.0
+offset_top = 32.0
+offset_right = -16.0
+offset_bottom = 72.0
+text = "Play"
+metadata/_edit_use_anchors_ = true
+
+[node name="quit" type="Button" parent="." unique_id=1992750006]
+offset_left = 56.0
+offset_top = 32.0
+offset_right = 120.0
+offset_bottom = 72.0
+pivot_offset = Vector2(-39, 131)
+text = "Quit"
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1833554035]
+zoom = Vector2(2, 2)
+
+[node name="bg" parent="." unique_id=1649111644 instance=ExtResource("2_v0l8b")]
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=935712368]
+position = Vector2(24, -48)
+scale = Vector2(1.375, 1.375)
+texture = ExtResource("3_wp4xf")
+
+[connection signal="pressed" from="play" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
