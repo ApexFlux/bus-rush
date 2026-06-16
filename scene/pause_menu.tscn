@@ -77,9 +77,9 @@ script = ExtResource("1_me6vf")
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1294764954]
 material = SubResource("ShaderMaterial_me6vf")
 custom_minimum_size = Vector2(1024, 576)
-offset_top = -8.0
+offset_top = -1.0
 offset_right = 1024.0
-offset_bottom = 568.0
+offset_bottom = 575.0
 color = Color(0, 0, 0, 0.39215687)
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1433566459]
@@ -113,7 +113,7 @@ text = "Quit"
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1789264137]
 libraries/ = SubResource("AnimationLibrary_qbwph")
 
-[connection signal="pressed" from="PanelContainer/VBoxContainer/resume" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/resume" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

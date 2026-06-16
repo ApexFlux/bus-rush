@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjp7ijtjpwhbn"
-path="res://.godot/imported/sit.png-824d0099baedd299d70003cc3b040971.ctex"
+path="res://.godot/imported/sit.png-89e0dffee8fce7df3ee4753932522d50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritesheet/character/sit.png"
-dest_files=["res://.godot/imported/sit.png-824d0099baedd299d70003cc3b040971.ctex"]
+source_file="res://spritesheet/character/char1/sit.png"
+dest_files=["res://.godot/imported/sit.png-89e0dffee8fce7df3ee4753932522d50.ctex"]
 
 [params]
 

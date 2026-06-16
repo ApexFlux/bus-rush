@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://do8f5unqb6oed"]
 
 [ext_resource type="Texture2D" uid="uid://ml5slk47ldb1" path="res://spritesheet/assets/kenney-didnt-use/kenney_pixel-platformer-industrial-expansion/Tilemap/tilemap.png" id="1_nt6i2"]
+[ext_resource type="Script" uid="uid://beqcbgdfhnvgf" path="res://scene/levels/level_1.gd" id="1_yynsy"]
 [ext_resource type="PackedScene" uid="uid://ds3sm100gxyeu" path="res://scene/characters/player.tscn" id="2_nt6i2"]
 [ext_resource type="PackedScene" uid="uid://c6w5ls061st7g" path="res://scene/levels/level_1bg.tscn" id="3_hpkiy"]
 [ext_resource type="PackedScene" uid="uid://bkwc8j0k6cuxx" path="res://scene/pause_menu.tscn" id="4_tesh5"]
@@ -184,6 +185,7 @@ sources/0 = SubResource("TileSetAtlasSource_hpkiy")
 distance = -624.0
 
 [node name="level1" type="Node2D" unique_id=1966866999]
+script = ExtResource("1_yynsy")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=899328724]
 visible = false
@@ -197,6 +199,8 @@ position = Vector2(24, 544)
 position = Vector2(136, -136)
 zoom = Vector2(1.2, 1.2)
 
+[node name="pause-menu" parent="CharacterBody2D" unique_id=615780064 instance=ExtResource("4_tesh5")]
+
 [node name="level1BG" parent="." unique_id=1373615428 instance=ExtResource("3_hpkiy")]
 process_priority = 1
 
@@ -205,7 +209,3 @@ process_priority = 1
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2025314554]
 position = Vector2(16, -24)
 shape = SubResource("WorldBoundaryShape2D_hpkiy")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=15883812]
-
-[node name="pause-menu" parent="." unique_id=615780064 instance=ExtResource("4_tesh5")]

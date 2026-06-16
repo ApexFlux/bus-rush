@@ -25,6 +25,7 @@ text = "Quit"
 metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1833554035]
+visible = false
 zoom = Vector2(2, 2)
 
 [node name="bg" parent="." unique_id=1649111644 instance=ExtResource("2_v0l8b")]
@@ -34,6 +35,5 @@ position = Vector2(24, -48)
 scale = Vector2(1.375, 1.375)
 texture = ExtResource("3_wp4xf")
 
-[connection signal="pressed" from="play" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
