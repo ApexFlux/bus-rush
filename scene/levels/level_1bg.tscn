@@ -55,6 +55,7 @@ scale = Vector2(0.20684527, 0.20684524)
 texture = ExtResource("3_210ry")
 
 [node name="foreground_urban_detail" type="ParallaxLayer" parent="." unique_id=543044013]
+visible = false
 motion_mirroring = Vector2(1452, 0)
 
 [node name="Foreground1" type="Sprite2D" parent="foreground_urban_detail" unique_id=1171220299]
