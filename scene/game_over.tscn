@@ -5,9 +5,21 @@ font_size = 160
 
 [node name="game-over" type="Node2D" unique_id=156911468]
 
-[node name="Label" type="Label" parent="." unique_id=1372740374]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=382214298]
+self_modulate = Color(5.912981, 0, 0, 0.7058824)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 offset_right = 1024.0
-offset_bottom = 256.0
+offset_bottom = 576.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="." unique_id=1372740374]
+offset_top = 15.0
+offset_right = 1024.0
+offset_bottom = 271.0
 size_flags_horizontal = 6
 size_flags_vertical = 6
 text = "Game Over"
@@ -15,24 +27,24 @@ label_settings = SubResource("LabelSettings_bx6u7")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=382214298]
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 8.0
-offset_right = 1024.0
-offset_bottom = 576.0
-grow_horizontal = 2
-grow_vertical = 0
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=787653190]
+self_modulate = Color(1, 1, 1, 0)
+top_level = true
+offset_left = 450.0
+offset_top = 318.0
+offset_right = 514.0
+offset_bottom = 370.0
+scale = Vector2(2, 2)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=681027741]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer2" unique_id=681027741]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=784250989]
+[node name="restart" type="Button" parent="PanelContainer2/VBoxContainer" unique_id=784250989]
 layout_mode = 2
 text = "Restart"
 
-[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer" unique_id=643528740]
+[node name="quit" type="Button" parent="PanelContainer2/VBoxContainer" unique_id=643528740]
 layout_mode = 2
 text = "Quit"
