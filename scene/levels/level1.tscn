@@ -381,6 +381,12 @@ zoom = Vector2(1.2, 1.2)
 [node name="pause-menu" parent="CharacterBody2D" unique_id=615780064 instance=ExtResource("4_tesh5")]
 visible = false
 
+[node name="Label" type="Label" parent="CharacterBody2D" unique_id=1502319576]
+offset_left = 454.0
+offset_top = -370.0
+offset_right = 521.0
+offset_bottom = -333.0
+
 [node name="level1BG" parent="." unique_id=1373615428 instance=ExtResource("3_hpkiy")]
 process_priority = 1
 
@@ -389,3 +395,9 @@ process_priority = 1
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2025314554]
 position = Vector2(0, -40)
 shape = SubResource("WorldBoundaryShape2D_hpkiy")
+
+[node name="Timer" type="Timer" parent="." unique_id=1433882157]
+wait_time = 100.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
