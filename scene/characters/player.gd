@@ -10,11 +10,14 @@ func _physics_process(delta: float) -> void:
 	# --- 1. APPLY GRAVITY ---
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-
+	
 	# --- 2. HANDLE JUMP ---
 	if Input.is_action_just_pressed("move_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-	
+		
+	if is_on_wall():
+		if Input.is_action_just_pressed("move_jump"):
+			velocity.y = JUMP_VELOCITY
 	# --- 3. HANDLE MOVEMENT ---
 	var direction := Input.get_axis("move_left", "move_right")
 	
