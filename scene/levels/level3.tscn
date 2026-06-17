@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://do8f5unqb6oed"]
 
+[ext_resource type="Script" uid="uid://duj86no0iv114" path="res://scene/levels/level_3.gd" id="1_npllw"]
 [ext_resource type="Texture2D" uid="uid://ml5slk47ldb1" path="res://spritesheet/assets/kenney-didnt-use/kenney_pixel-platformer-industrial-expansion/Tilemap/tilemap.png" id="1_nt6i2"]
 [ext_resource type="Texture2D" uid="uid://c7y0vpuv0cqlq" path="res://spritesheet/assets/rock.png" id="2_i1b1j"]
 [ext_resource type="PackedScene" uid="uid://ds3sm100gxyeu" path="res://scene/characters/player.tscn" id="2_nt6i2"]
@@ -490,6 +491,7 @@ sources/0 = SubResource("TileSetAtlasSource_i1b1j")
 distance = -560.0
 
 [node name="level3" type="Node2D" unique_id=1966866999]
+script = ExtResource("1_npllw")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=899328724]
 tile_set = SubResource("TileSet_hpkiy")
