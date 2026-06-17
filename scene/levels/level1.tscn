@@ -378,19 +378,19 @@ position = Vector2(273, 520)
 position = Vector2(136, -136)
 
 [node name="time_left" type="Label" parent="CharacterBody2D" unique_id=1502319576]
-offset_left = 417.0
-offset_top = -409.0
-offset_right = 639.72974
-offset_bottom = -321.0
+offset_left = 482.0
+offset_top = -387.0
+offset_right = 606.72974
+offset_bottom = -367.0
 
 [node name="pause-menu" parent="CharacterBody2D" unique_id=615780064 instance=ExtResource("4_tesh5")]
 visible = false
 
 [node name="health" type="Label" parent="CharacterBody2D" unique_id=1250536690]
-offset_left = 127.0
-offset_top = -415.0
-offset_right = 242.0
-offset_bottom = -392.0
+offset_left = -346.0
+offset_top = -398.0
+offset_right = -231.0
+offset_bottom = -375.0
 
 [node name="level1BG" parent="." unique_id=1373615428 instance=ExtResource("3_hpkiy")]
 process_priority = 1
