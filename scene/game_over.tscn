@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://cbqtct1jw3len"]
 
+[ext_resource type="Script" uid="uid://dh3227r1di6c3" path="res://scene/game_over.gd" id="1_8uq5u"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_bx6u7"]
 font_size = 160
 
-[node name="CanvasLayer" type="CanvasLayer" unique_id=691742413]
+[node name="game-over" type="CanvasLayer" unique_id=691742413]
+script = ExtResource("1_8uq5u")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=443072282]
 self_modulate = Color(5.912981, 0, 0, 0.7058824)
@@ -50,3 +53,6 @@ text = "Restart"
 [node name="quit" type="Button" parent="PanelContainer2/VBoxContainer" unique_id=8316990]
 layout_mode = 2
 text = "Quit"
+
+[connection signal="pressed" from="PanelContainer2/VBoxContainer/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="PanelContainer2/VBoxContainer/quit" to="." method="_on_quit_pressed"]

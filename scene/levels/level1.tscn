@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c6w5ls061st7g" path="res://scene/levels/level_1bg.tscn" id="3_hpkiy"]
 [ext_resource type="Texture2D" uid="uid://c7y0vpuv0cqlq" path="res://spritesheet/assets/rock.png" id="3_wim12"]
 [ext_resource type="PackedScene" uid="uid://bkwc8j0k6cuxx" path="res://scene/pause_menu.tscn" id="4_tesh5"]
+[ext_resource type="PackedScene" uid="uid://cbqtct1jw3len" path="res://scene/game_over.tscn" id="6_fcruq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcruq"]
 texture = ExtResource("2_wim12")
@@ -391,6 +392,9 @@ offset_left = -346.0
 offset_top = -398.0
 offset_right = -231.0
 offset_bottom = -375.0
+
+[node name="game-over" parent="CharacterBody2D" unique_id=691742413 instance=ExtResource("6_fcruq")]
+process_mode = 3
 
 [node name="level1BG" parent="." unique_id=1373615428 instance=ExtResource("3_hpkiy")]
 process_priority = 1

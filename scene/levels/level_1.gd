@@ -3,6 +3,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$"CharacterBody2D/game-over".hide()
 	$"CharacterBody2D/pause-menu".hide()
 	$Timer.start()
 	$CharacterBody2D/health.text = "Health: ❤️❤️❤️"
@@ -13,12 +14,16 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	$CharacterBody2D/time_left.text = "Time left: %.2f" %($Timer.time_left)
 	if $CharacterBody2D.life == 0:
-		# replace this with a "Try again" scene or something
-		get_tree().change_scene_to_file("res://scene/main.tscn")
+		game_over()
 	pass
 
+func game_over() -> void:
+	get_tree().paused = true
+	$"CharacterBody2D/game-over".last_scene = "res://scene/levels/level1.tscn"
+	$"CharacterBody2D/game-over".show()
 
 func _on_timer_timeout() -> void:
+	game_over()
 	pass # Replace with function body.
 
 
