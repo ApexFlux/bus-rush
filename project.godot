@@ -12,7 +12,7 @@ config_version=5
 
 config/name="anik"
 run/main_scene="uid://djpbqsrvs4j8w"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
@@ -20,9 +20,13 @@ config/icon="res://icon.svg"
 window/size/viewport_width=1024
 window/size/viewport_height=576
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/omnemoji/plugin.cfg")
+
 [gui]
 
-theme/custom_font="uid://ds1046p1b0p8p"
+theme/custom_font="res://addons/omnemoji/resources/OmnEmojiMerged.tres"
 
 [input]
 
@@ -56,6 +60,12 @@ esc={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
+
+[omnemoji]
+
+emoji_provider=5
+text_provider=0
+custom_text_font="uid://ds1046p1b0p8p"
 
 [physics]
 

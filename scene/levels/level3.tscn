@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://c7y0vpuv0cqlq" path="res://spritesheet/assets/rock.png" id="2_i1b1j"]
 [ext_resource type="PackedScene" uid="uid://ds3sm100gxyeu" path="res://scene/characters/char_3.tscn" id="2_nt6i2"]
 [ext_resource type="PackedScene" uid="uid://bhxf15fe864v5" path="res://scene/levels/level_3bg.tscn" id="3_7q5m8"]
+[ext_resource type="FontFile" uid="uid://b74g2phvgwpib" path="res://fonts/Noto_Color_Emoji/NotoColorEmoji-Regular.ttf" id="5_j5fa3"]
 [ext_resource type="PackedScene" uid="uid://cbqtct1jw3len" path="res://scene/game_over.tscn" id="5_pqnrn"]
 
 [sub_resource type="TileSet" id="TileSet_hpkiy"]
@@ -320,6 +321,9 @@ texture_region_size = Vector2i(18, 18)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_pqnrn")
 
+[sub_resource type="LabelSettings" id="LabelSettings_gfkks"]
+font = ExtResource("5_j5fa3")
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pqnrn"]
 size = Vector2(7902, 86)
 
@@ -358,6 +362,8 @@ offset_left = -244.0
 offset_top = -335.0
 offset_right = -129.0
 offset_bottom = -312.0
+theme_override_fonts/font = ExtResource("5_j5fa3")
+label_settings = SubResource("LabelSettings_gfkks")
 
 [node name="game-over" parent="CharacterBody2D" unique_id=691742413 instance=ExtResource("5_pqnrn")]
 process_mode = 3

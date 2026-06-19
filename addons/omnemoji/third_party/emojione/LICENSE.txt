@@ -1,0 +1,6 @@
+Font: EmojiOne Color
+License: SIL OFL 1.1 / CC BY 4.0
+License URL: https://github.com/adobe-fonts/emojione-color
+
+Downloaded by OmnEmoji addon for Godot.
+See the license URL above for full license terms.
