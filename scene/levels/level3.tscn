@@ -320,7 +320,8 @@ texture_region_size = Vector2i(18, 18)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_pqnrn")
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pqnrn"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pqnrn"]
+size = Vector2(7902, 86)
 
 [node name="level3" type="Node2D" unique_id=1966866999]
 script = ExtResource("1_npllw")
@@ -367,8 +368,8 @@ visible = false
 [node name="Area2D" type="Area2D" parent="." unique_id=1145735221]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=413169843]
-position = Vector2(3008, 544)
-shape = SubResource("WorldBoundaryShape2D_pqnrn")
+position = Vector2(2245, 577)
+shape = SubResource("RectangleShape2D_pqnrn")
 
 [node name="Timer" type="Timer" parent="." unique_id=1065488031]
 wait_time = 100.0
