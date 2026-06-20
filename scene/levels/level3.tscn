@@ -8,6 +8,7 @@
 [ext_resource type="FontFile" uid="uid://b74g2phvgwpib" path="res://fonts/Noto_Color_Emoji/NotoColorEmoji-Regular.ttf" id="5_j5fa3"]
 [ext_resource type="PackedScene" uid="uid://cbqtct1jw3len" path="res://scene/game_over.tscn" id="5_pqnrn"]
 [ext_resource type="PackedScene" uid="uid://bkwc8j0k6cuxx" path="res://scene/pause_menu.tscn" id="6_j5fa3"]
+[ext_resource type="PackedScene" uid="uid://ci05opx7gj0q2" path="res://scene/level_finished_screen.tscn" id="8_cc7lp"]
 
 [sub_resource type="TileSet" id="TileSet_hpkiy"]
 physics_layer_0/collision_layer = 1
@@ -328,6 +329,9 @@ font = ExtResource("5_j5fa3")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pqnrn"]
 size = Vector2(7902, 86)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0lyf5"]
+size = Vector2(28, 23)
+
 [node name="level3" type="Node2D" unique_id=1966866999]
 script = ExtResource("1_npllw")
 
@@ -373,6 +377,9 @@ visible = false
 [node name="pause-menu" parent="CharacterBody2D" unique_id=615780064 instance=ExtResource("6_j5fa3")]
 visible = false
 
+[node name="level-finished" parent="CharacterBody2D" unique_id=524557848 instance=ExtResource("8_cc7lp")]
+process_mode = 3
+
 [node name="level3_bg" parent="." unique_id=482342009 instance=ExtResource("3_7q5m8")]
 visible = false
 
@@ -386,4 +393,12 @@ shape = SubResource("RectangleShape2D_pqnrn")
 wait_time = 100.0
 one_shot = true
 
+[node name="level_finished" type="Area2D" parent="." unique_id=1283272934]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="level_finished" unique_id=1334598263]
+position = Vector2(3119, 460.5)
+shape = SubResource("RectangleShape2D_0lyf5")
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="level_finished" to="." method="_on_level_finished_body_entered"]

@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://ci05opx7gj0q2"]
 
+[ext_resource type="Script" uid="uid://bo6bmf7o1nl63" path="res://scene/level_finished_screen.gd" id="1_066d5"]
+
 [node name="level-finished" type="CanvasLayer" unique_id=524557848]
+script = ExtResource("1_066d5")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=624836539]
 offset_right = 1024.0
@@ -56,3 +59,7 @@ theme_override_font_sizes/font_size = 96
 text = "Level Finished"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/replay" to="." method="_on_replay_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/next-level" to="." method="_on_nextlevel_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
