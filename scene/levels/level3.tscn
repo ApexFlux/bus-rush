@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cbqtct1jw3len" path="res://scene/game_over.tscn" id="5_pqnrn"]
 [ext_resource type="PackedScene" uid="uid://bkwc8j0k6cuxx" path="res://scene/pause_menu.tscn" id="6_j5fa3"]
 [ext_resource type="PackedScene" uid="uid://ci05opx7gj0q2" path="res://scene/level_finished_screen.tscn" id="8_cc7lp"]
+[ext_resource type="AudioStream" uid="uid://cj8pt5qd2yiul" path="res://AudioFiles/BGM_Level_3.mp3" id="10_lrvtc"]
 
 [sub_resource type="TileSet" id="TileSet_hpkiy"]
 physics_layer_0/collision_layer = 1
@@ -398,6 +399,10 @@ one_shot = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="level_finished" unique_id=1334598263]
 position = Vector2(3119, 460.5)
 shape = SubResource("RectangleShape2D_0lyf5")
+
+[node name="BgmLevel3" type="AudioStreamPlayer" parent="." unique_id=1449223765]
+stream = ExtResource("10_lrvtc")
+autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bkwc8j0k6cuxx" path="res://scene/pause_menu.tscn" id="4_tesh5"]
 [ext_resource type="PackedScene" uid="uid://cbqtct1jw3len" path="res://scene/game_over.tscn" id="6_fcruq"]
 [ext_resource type="PackedScene" uid="uid://ci05opx7gj0q2" path="res://scene/level_finished_screen.tscn" id="7_k7kyu"]
+[ext_resource type="PackedScene" uid="uid://b8yklg38667w8" path="res://scene/music/bgm/bgm_lvl_1.tscn" id="9_j04vv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcruq"]
 texture = ExtResource("2_wim12")
@@ -424,6 +425,8 @@ shape = SubResource("WorldBoundaryShape2D_fcruq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="level_finished" unique_id=1862614574]
 position = Vector2(3429, 409)
 shape = SubResource("RectangleShape2D_0lyf5")
+
+[node name="bgm_lvl_1" parent="." unique_id=746828731 instance=ExtResource("9_j04vv")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
