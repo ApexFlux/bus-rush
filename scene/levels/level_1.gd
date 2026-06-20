@@ -19,7 +19,7 @@ func _process(delta: float) -> void:
 	pass
 
 func game_over() -> void:
-	#get_tree().paused = true
+	get_tree().paused = true
 	$CharacterBody2D.die()
 	$"CharacterBody2D/game-over".last_scene = "res://scene/levels/level1.tscn"
 	$"CharacterBody2D/game-over".show()
