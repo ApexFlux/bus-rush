@@ -25,26 +25,33 @@ position = Vector2(352, 104)
 scale = Vector2(0.16562502, 0.16562502)
 texture = ExtResource("3_wp4xf")
 
-[node name="play" type="Button" parent="." unique_id=101252395]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=819943687]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=2004685271]
+layout_mode = 2
+
+[node name="play" type="Button" parent="PanelContainer/VBoxContainer" unique_id=101252395]
 modulate = Color(0.9882353, 1, 1, 1)
-offset_left = 176.0
-offset_top = 256.0
-offset_right = 288.0
-offset_bottom = 312.0
+layout_mode = 2
 text = "Play"
 icon_alignment = 1
 
-[node name="quit" type="Button" parent="." unique_id=1596149866]
-offset_left = 368.0
-offset_top = 256.0
-offset_right = 480.0
-offset_bottom = 312.0
+[node name="quit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1596149866]
+layout_mode = 2
 text = "Quit"
 icon_alignment = 1
 
-[node name="StartMenu1" type="AudioStreamPlayer" parent="." unique_id=32290180]
+[node name="StartMenu1" type="AudioStreamPlayer" parent="PanelContainer/VBoxContainer" unique_id=32290180]
 stream = ExtResource("5_0ha60")
 autoplay = true
 
-[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[node name="credits" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1590790706]
+layout_mode = 2
+text = "Credits
+"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/credits" to="." method="_on_credits_pressed"]

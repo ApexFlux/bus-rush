@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://b4pk38raita1m"]
+
+[ext_resource type="Script" uid="uid://bgnnwotkhlsmo" path="res://scene/credits.gd" id="1_c8jmj"]
+
+[node name="Control" type="Control" unique_id=1010258362]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_c8jmj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=690030549]
+layout_mode = 0
+offset_right = 1024.0
+offset_bottom = 576.0
+color = Color(0.31799886, 0.31799886, 0.31799886, 0.5647059)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=236757302]
+layout_mode = 0
+offset_right = 1047.0
+offset_bottom = 726.0
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" unique_id=157398422]
+custom_maximum_size = Vector2(1024, 576)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/MarginContainer" unique_id=1908312724]
+layout_mode = 2
+bbcode_enabled = true
+text = "[center]
+[font_size=40][b]Credits[/b][/font_size]
+
+[font_size=28][i]'Srabon Syndicate'[/i][/font_size]
+
+Final project submission for 0613-CSE-1206 (Computer Programming Laboratory) lab project by group-7.
+University of Dhaka, Department of Electrical and Electronic Engineering, 1st year 2nd Semester, Session 2024-25. 
+
+[font_size=24][b]Group Members[/b][/font_size]
+FH-168-002    2024013224    SIAM AHMED
+FH-168-003    2024913225    FARDIN IBNE HASSAN
+AE-168-006    2024613228    A. M. SIAM SAMI
+JN-168-018    2024213240    ANIK DAS
+JN-168-024    2024613246    AOURKO PROVO CHAKRABORTY
+
+
+[font_size=24][b]Development Team[/b][/font_size]
+[b]1. SIAM AHMED[/b] 
+Presentation Designer, Documentation and Presentation Lead, Assistant Developer.
+
+[b]2. FARDIN IBNE HASSAN[/b]
+Project Coordinator, Level Design, Creative Director, Sound Engineer, Asset Acquisition, Beta Tester. 
+
+[b]3. A. M. SIAM SAMI[/b] 
+Lead Programmer, Engine Architecture: [Game Physics, Collision Detection, State Mechanics Implementation], Git Master. 
+
+[b]4. ANIK DAS[/b] 
+Gameplay Programmer, UI Designer, Asset Acquisition and Integrator, Git Coordinator, Beta Tester.   
+
+[b]5. AOURKO PROVO CHAKRABORTY[/b] 
+Quality Assurance, Playtesting Lead, Asset Management, UX Analyst.
+            
+
+[font_size=24][b]Course Instructors[/b][/font_size]
+Dr. Khaleda Ali & Md. Nizam Uddin Tanim.
+
+We could not have done this without the constant support and motivation from our instructors, so we extend our deepest gratitude towards them.
+
+
+[font_size=24][b]Technical Information[/b][/font_size]
+Principal development software used: [i]'Godot Game Engine'[/i]
+Coding language used: [i]'GDScript'[/i] and [i]'GDShader'[/i]
+
+
+[font_size=24][b]Assets Collection[/b][/font_size]
+• [b]Visual Sprites & Tilesets:[/b] Kenney (kenney.nl)
+• [b]Character Sprite Assets:[/b] Universal LPC Spritesheet Generator (liberatedpixelcup.github.io)
+• [b]Sound Effects:[/b] Curated via Pixabay Content License (pixabay.com)
+• [b]Audio Soundtracks:[/b]
+  - Level 1: 'Full moon 2.0' by RJ Pasin
+  - Level 2: 'Megalovania' by RichaadEB
+  - Level 3: 'credits song for my death but im the final boss' by Astron
+
+
+[font_size=24][b]Special Thanks[/b][/font_size]
+Powered by 3am Motivation, Certain Generative Pre-trained Transformers, Copious Amount of Debugging and the Coffee in our Veins.
+
+And of course, to you, the PLAYERS. 
+Thank you so much.
+[/center]
+
+
+"
+fit_content = true
+autowrap_trim_flags = 64

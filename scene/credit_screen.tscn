@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://brbgsp33x46jx"]
+
+[ext_resource type="PackedScene" uid="uid://b4pk38raita1m" path="res://scene/credits.tscn" id="1_g65jv"]
+[ext_resource type="Texture2D" uid="uid://glf6qjpu63if" path="res://scene/background/BG.png" id="2_2jnt5"]
+
+[node name="credit-screen" type="Node2D" unique_id=572053703]
+
+[node name="Bg" type="Sprite2D" parent="." unique_id=1249057082]
+position = Vector2(524, 246)
+scale = Vector2(0.45584473, 0.45584482)
+texture = ExtResource("2_2jnt5")
+
+[node name="Control" parent="." unique_id=1010258362 instance=ExtResource("1_g65jv")]
