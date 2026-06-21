@@ -63,6 +63,7 @@ icon = SubResource("ViewportTexture_e5g8k")
 
 [node name="StartMenu2" type="AudioStreamPlayer" parent="." unique_id=1575003903]
 stream = ExtResource("3_bo06a")
+autoplay = true
 
 [connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]

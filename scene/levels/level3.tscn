@@ -373,7 +373,6 @@ theme_override_fonts/font = ExtResource("5_j5fa3")
 label_settings = SubResource("LabelSettings_gfkks")
 
 [node name="game-over" parent="CharacterBody2D" unique_id=691742413 instance=ExtResource("5_pqnrn")]
-process_mode = 3
 visible = false
 
 [node name="pause-menu" parent="CharacterBody2D" unique_id=615780064 instance=ExtResource("6_j5fa3")]
@@ -411,4 +410,4 @@ autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="body_entered" from="level_finished" to="." method="_on_level_finished_body_entered"]
+[connection signal="body_entered" from="level_finished" to="CharacterBody2D/level-finished" method="_on_level_finished_body_entered"]

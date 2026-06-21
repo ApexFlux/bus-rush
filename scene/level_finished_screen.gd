@@ -27,3 +27,10 @@ func _on_nextlevel_pressed() -> void:
 func _on_quit_pressed() -> void:
 	get_tree().change_scene_to_file("res://scene/menu.tscn")
 	pass # Replace with function body.
+
+
+func _on_level_finished_body_entered(body: Node2D) -> void:
+	get_tree().paused = true
+	$LevelComplete3.play()
+	show()
+	pass # Replace with function body.

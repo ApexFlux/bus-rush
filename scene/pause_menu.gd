@@ -8,10 +8,12 @@ func _process(delta: float) -> void:
 
 func pause():
 	show()
+	$PauseMenu.play()
 	get_tree().paused = true
 	#$AnimationPlayer.play_backwards("blur")
 
 func resume():
+	$PauseMenu.stop()
 	hide()
 	get_tree().paused = false
 	#$AnimationPlayer.play("blur")

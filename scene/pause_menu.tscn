@@ -122,8 +122,8 @@ text = "Quit"
 libraries/ = SubResource("AnimationLibrary_qbwph")
 
 [node name="PauseMenu" type="AudioStreamPlayer" parent="." unique_id=964939776]
+process_mode = 3
 stream = ExtResource("3_cq4tv")
-autoplay = true
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/resume" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/resume" to="." method="_on_resume_pressed"]

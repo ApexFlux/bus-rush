@@ -62,6 +62,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="LevelComplete3" type="AudioStreamPlayer" parent="." unique_id=242543159]
+process_mode = 3
 stream = ExtResource("2_57phu")
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/replay" to="." method="_on_replay_pressed"]

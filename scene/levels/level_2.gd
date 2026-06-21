@@ -8,6 +8,8 @@ func _ready() -> void:
 	$"CharacterBody2D/level-finished".hide()
 	$Timer.start()
 	$CharacterBody2D/health.text = "Health: ❤️❤️❤️"
+	$"CharacterBody2D/level-finished".current_level = "res://scene/levels/level2.tscn"
+	$"CharacterBody2D/level-finished".next_level = "res://scene/levels/level3.tscn"
 	pass # Replace with function body.
 
 
@@ -20,6 +22,7 @@ func _process(delta: float) -> void:
 
 func game_over() -> void:
 	get_tree().paused = true
+	$"CharacterBody2D/game-over/GameOver".play()
 	$"CharacterBody2D/game-over".last_scene = "res://scene/levels/level2.tscn"
 	$"CharacterBody2D/game-over".show()
 
@@ -36,12 +39,4 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	var tmp = $CharacterBody2D/health.text 
 	$CharacterBody2D/health.text = tmp.left(-2)
 	
-	pass # Replace with function body.
-
-
-func _on_level_finished_body_entered(body: Node2D) -> void:
-	get_tree().paused = true
-	$"CharacterBody2D/level-finished".current_level = "res://scene/levels/level2.tscn"
-	$"CharacterBody2D/level-finished".next_level = "res://scene/levels/level3.tscn"
-	$"CharacterBody2D/level-finished".show()
 	pass # Replace with function body.
