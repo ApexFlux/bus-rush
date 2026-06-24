@@ -17,16 +17,17 @@ texture = ExtResource("2_brvut")
 [node name="bg" parent="." unique_id=1649111644 instance=ExtResource("2_v0l8b")]
 
 [node name="Logo" type="Sprite2D" parent="." unique_id=2091813396]
-position = Vector2(520, 104)
-scale = Vector2(0.16562502, 0.16562502)
+position = Vector2(520, 176)
+scale = Vector2(0.19999999, 0.19999999)
 texture = ExtResource("3_wp4xf")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=819943687]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 422.0
+offset_left = 372.0
 offset_top = 338.0
 offset_right = 622.0
-offset_bottom = 538.0
+offset_bottom = 438.0
+scale = Vector2(1.2, 1.2)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=2004685271]
 layout_mode = 2
@@ -37,20 +38,20 @@ layout_mode = 2
 text = "Play"
 icon_alignment = 1
 
-[node name="quit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1596149866]
-layout_mode = 2
-text = "Quit"
-icon_alignment = 1
-
 [node name="credits" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1590790706]
 layout_mode = 2
 text = "Credits
 "
+
+[node name="quit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1596149866]
+layout_mode = 2
+text = "Quit"
+icon_alignment = 1
 
 [node name="StartMenu1" type="AudioStreamPlayer" parent="." unique_id=32290180]
 stream = ExtResource("5_0ha60")
 autoplay = true
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
