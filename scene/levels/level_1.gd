@@ -44,7 +44,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 
 func _on_checkpoint_1_body_entered(body: Node2D) -> void:
-	
 	$CharacterBody2D.last_checkpoint = $"checkpoint1/CollisionShape2D".position
 	pass # Replace with function body.
 
