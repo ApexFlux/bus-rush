@@ -31,6 +31,8 @@ func _on_quit_pressed() -> void:
 
 
 func _on_level_finished_body_entered(body: Node2D) -> void:
+	if body != $"..":
+		return
 	get_tree().paused = true
 	$LevelComplete3.play()
 	show()

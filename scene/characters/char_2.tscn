@@ -512,3 +512,12 @@ shape = SubResource("CapsuleShape2D_iv51j")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1941100258]
 libraries/ = SubResource("AnimationLibrary_nw2ms")
 autoplay = &"idle"
+
+[node name="DashTimer" type="Timer" parent="." unique_id=906933989]
+one_shot = true
+
+[node name="cooldown_timer" type="Timer" parent="DashTimer" unique_id=529001035]
+one_shot = true
+
+[connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="DashTimer/cooldown_timer" to="." method="_on_cooldown_timer_timeout"]
