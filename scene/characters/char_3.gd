@@ -2,11 +2,14 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -300.0
-
+@export var last_checkpoint : Vector2
 @export var life = 3
 
 @onready var anim = $AnimationPlayer
 @onready var sprite = $AnimatedSprite2D # Grab this once to keep code clean
+
+func move_to_last_checkpoint() -> void:
+	position = last_checkpoint
 
 func _physics_process(delta: float) -> void:
 	# --- 1. APPLY GRAVITY ---
