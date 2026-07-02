@@ -334,6 +334,81 @@ size = Vector2(7902, 86)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0lyf5"]
 size = Vector2(146, 110.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlp5k"]
+size = Vector2(217, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y7s0a"]
+size = Vector2(91, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ykqm0"]
+size = Vector2(123, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ah4h4"]
+size = Vector2(122, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_714tv"]
+size = Vector2(59, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a0jl2"]
+size = Vector2(59, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bsy07"]
+size = Vector2(219, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_88q0s"]
+size = Vector2(123, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4p2x6"]
+size = Vector2(154, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2dbcv"]
+size = Vector2(20, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cojf5"]
+size = Vector2(20, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0ucc"]
+size = Vector2(62, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uyixr"]
+size = Vector2(43, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pfmre"]
+size = Vector2(44, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4j31t"]
+size = Vector2(45, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa64e"]
+size = Vector2(44, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f6gld"]
+size = Vector2(46, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8omo"]
+size = Vector2(46, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4qn3q"]
+size = Vector2(60, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jeun1"]
+size = Vector2(188, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bvvi4"]
+size = Vector2(141, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aiikj"]
+size = Vector2(62, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k0xil"]
+size = Vector2(61, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uy1xd"]
+size = Vector2(60, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rn88g"]
+size = Vector2(20, 33)
+
 [node name="level3" type="Node2D" unique_id=1966866999]
 script = ExtResource("1_npllw")
 
@@ -380,6 +455,7 @@ visible = false
 
 [node name="level-finished" parent="CharacterBody2D" unique_id=524557848 instance=ExtResource("8_cc7lp")]
 process_mode = 3
+visible = false
 
 [node name="level3_bg" parent="." unique_id=482342009 instance=ExtResource("3_7q5m8")]
 
@@ -408,6 +484,181 @@ texture = ExtResource("10_xnyoe")
 stream = ExtResource("10_lrvtc")
 autoplay = true
 
+[node name="checkpoint" type="Area2D" parent="." unique_id=421932114]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint" unique_id=1425220552]
+position = Vector2(127.5, 514)
+shape = SubResource("RectangleShape2D_mlp5k")
+
+[node name="checkpoint2" type="Area2D" parent="." unique_id=389445856]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint2" unique_id=597853931]
+position = Vector2(320.5, 480)
+shape = SubResource("RectangleShape2D_y7s0a")
+
+[node name="checkpoint3" type="Area2D" parent="." unique_id=1449532307]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint3" unique_id=1700460923]
+position = Vector2(479.5, 465)
+shape = SubResource("RectangleShape2D_ykqm0")
+
+[node name="checkpoint4" type="Area2D" parent="." unique_id=1484512094]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint4" unique_id=1289377135]
+position = Vector2(656, 497)
+shape = SubResource("RectangleShape2D_ah4h4")
+
+[node name="checkpoint5" type="Area2D" parent="." unique_id=522032187]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint5" unique_id=1434255797]
+position = Vector2(785, 466)
+shape = SubResource("RectangleShape2D_714tv")
+
+[node name="checkpoint6" type="Area2D" parent="." unique_id=348114647]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint6" unique_id=2034012505]
+position = Vector2(879.5, 513)
+shape = SubResource("RectangleShape2D_a0jl2")
+
+[node name="checkpoint7" type="Area2D" parent="." unique_id=1303749353]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint7" unique_id=10913101]
+position = Vector2(1071.5, 496)
+shape = SubResource("RectangleShape2D_bsy07")
+
+[node name="checkpoint8" type="Area2D" parent="." unique_id=835970122]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint8" unique_id=1774221551]
+position = Vector2(1311.5, 514)
+shape = SubResource("RectangleShape2D_88q0s")
+
+[node name="checkpoint9" type="Area2D" parent="." unique_id=927840312]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint9" unique_id=230922662]
+position = Vector2(1504, 513)
+shape = SubResource("RectangleShape2D_4p2x6")
+
+[node name="checkpoint10" type="Area2D" parent="." unique_id=689808446]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint10" unique_id=1231446831]
+position = Vector2(1660, 478)
+shape = SubResource("RectangleShape2D_2dbcv")
+
+[node name="checkpoint11" type="Area2D" parent="." unique_id=1755187868]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint11" unique_id=179153249]
+position = Vector2(2052, 474)
+shape = SubResource("RectangleShape2D_cojf5")
+
+[node name="checkpoint12" type="Area2D" parent="." unique_id=1462705822]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint12" unique_id=1944246255]
+position = Vector2(2128, 434)
+shape = SubResource("RectangleShape2D_r0ucc")
+
+[node name="checkpoint13" type="Area2D" parent="." unique_id=3670915]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint13" unique_id=1465627734]
+position = Vector2(2248.5, 432)
+shape = SubResource("RectangleShape2D_uyixr")
+
+[node name="checkpoint14" type="Area2D" parent="." unique_id=457762884]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint14" unique_id=333468545]
+position = Vector2(2345, 466)
+shape = SubResource("RectangleShape2D_pfmre")
+
+[node name="checkpoint15" type="Area2D" parent="." unique_id=1267216452]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint15" unique_id=1607904638]
+position = Vector2(2455.5, 498)
+shape = SubResource("RectangleShape2D_4j31t")
+
+[node name="checkpoint16" type="Area2D" parent="." unique_id=1542459011]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint16" unique_id=621081325]
+position = Vector2(2568, 448)
+shape = SubResource("RectangleShape2D_qa64e")
+
+[node name="checkpoint17" type="Area2D" parent="." unique_id=2075697015]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint17" unique_id=1585095190]
+position = Vector2(2680, 481)
+shape = SubResource("RectangleShape2D_f6gld")
+
+[node name="checkpoint18" type="Area2D" parent="." unique_id=1302886688]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint18" unique_id=1774450178]
+position = Vector2(2776, 418)
+shape = SubResource("RectangleShape2D_v8omo")
+
+[node name="checkpoint19" type="Area2D" parent="." unique_id=1424909492]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint19" unique_id=613318596]
+position = Vector2(2879, 450)
+shape = SubResource("RectangleShape2D_4qn3q")
+
+[node name="checkpoint20" type="Area2D" parent="." unique_id=1290671846]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint20" unique_id=286362466]
+position = Vector2(3039, 465)
+shape = SubResource("RectangleShape2D_jeun1")
+
+[node name="checkpoint21" type="Area2D" parent="." unique_id=753153280]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint21" unique_id=652639995]
+position = Vector2(3238.5, 498)
+shape = SubResource("RectangleShape2D_bvvi4")
+
+[node name="checkpoint22" type="Area2D" parent="." unique_id=1217956656]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint22" unique_id=1727256203]
+position = Vector2(3408, 498)
+shape = SubResource("RectangleShape2D_aiikj")
+
+[node name="checkpoint23" type="Area2D" parent="." unique_id=1400064135]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint23" unique_id=652453071]
+position = Vector2(3535.5, 497)
+shape = SubResource("RectangleShape2D_k0xil")
+
+[node name="checkpoint24" type="Area2D" parent="." unique_id=863868844]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint24" unique_id=1630121052]
+position = Vector2(3647, 498)
+shape = SubResource("RectangleShape2D_uy1xd")
+
+[node name="checkpoint25" type="Area2D" parent="." unique_id=2026041251]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint25" unique_id=1328490734]
+position = Vector2(3755, 492.5)
+shape = SubResource("RectangleShape2D_rn88g")
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="level_finished" to="CharacterBody2D/level-finished" method="_on_level_finished_body_entered"]
+[connection signal="body_entered" from="checkpoint" to="." method="_on_checkpoint_body_entered"]
+[connection signal="body_entered" from="checkpoint2" to="." method="_on_checkpoint_2_body_entered"]
+[connection signal="body_entered" from="checkpoint3" to="." method="_on_checkpoint_3_body_entered"]
+[connection signal="body_entered" from="checkpoint4" to="." method="_on_checkpoint_4_body_entered"]
+[connection signal="body_entered" from="checkpoint5" to="." method="_on_checkpoint_5_body_entered"]
+[connection signal="body_entered" from="checkpoint6" to="." method="_on_checkpoint_6_body_entered"]
+[connection signal="body_entered" from="checkpoint7" to="." method="_on_checkpoint_7_body_entered"]
+[connection signal="body_entered" from="checkpoint8" to="." method="_on_checkpoint_8_body_entered"]
+[connection signal="body_entered" from="checkpoint9" to="." method="_on_checkpoint_9_body_entered"]
+[connection signal="body_entered" from="checkpoint10" to="." method="_on_checkpoint_10_body_entered"]
+[connection signal="body_entered" from="checkpoint11" to="." method="_on_checkpoint_11_body_entered"]
+[connection signal="body_entered" from="checkpoint12" to="." method="_on_checkpoint_12_body_entered"]
+[connection signal="body_entered" from="checkpoint13" to="." method="_on_checkpoint_13_body_entered"]
+[connection signal="body_entered" from="checkpoint14" to="." method="_on_checkpoint_14_body_entered"]
+[connection signal="body_entered" from="checkpoint15" to="." method="_on_checkpoint_15_body_entered"]
+[connection signal="body_entered" from="checkpoint16" to="." method="_on_checkpoint_16_body_entered"]
+[connection signal="body_entered" from="checkpoint17" to="." method="_on_checkpoint_17_body_entered"]
+[connection signal="body_entered" from="checkpoint18" to="." method="_on_checkpoint_18_body_entered"]
+[connection signal="body_entered" from="checkpoint19" to="." method="_on_checkpoint_19_body_entered"]
+[connection signal="body_entered" from="checkpoint20" to="." method="_on_checkpoint_20_body_entered"]
+[connection signal="body_entered" from="checkpoint21" to="." method="_on_checkpoint_21_body_entered"]
+[connection signal="body_entered" from="checkpoint22" to="." method="_on_checkpoint_22_body_entered"]
+[connection signal="body_entered" from="checkpoint23" to="." method="_on_checkpoint_23_body_entered"]
+[connection signal="body_entered" from="checkpoint24" to="." method="_on_checkpoint_24_body_entered"]
+[connection signal="body_entered" from="checkpoint25" to="." method="_on_checkpoint_25_body_entered"]

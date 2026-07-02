@@ -12,7 +12,6 @@ func die() -> void:
 	anim.play("die")
 
 func move_to_last_checkpoint() -> void:
-	#print(last_checkpoint)
 	position = last_checkpoint
 
 func _physics_process(delta: float) -> void:
