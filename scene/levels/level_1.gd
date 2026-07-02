@@ -49,14 +49,8 @@ func _on_checkpoint_1_body_entered(body: Node2D) -> void:
 	pass # Replace with function body.
 
 
-func _on_checkpoint_2_body_entered(body: Node2D) -> void:
-	print("checkpoint2")
-	$CharacterBody2D.last_checkpoint = $"checkpoint2/CollisionShape2D".position
-	pass # Replace with function body.
-
 
 func _on_checkpoint_3_body_entered(body: Node2D) -> void:
-	print("checkpoint3")
 	$CharacterBody2D.last_checkpoint = $"checkpoint3/CollisionShape2D".position
 	pass # Replace with function body.
 

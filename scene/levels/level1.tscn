@@ -369,9 +369,10 @@ distance = 54.0
 size = Vector2(97, 62)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlp5k"]
-size = Vector2(75, 32.5)
+size = Vector2(43, 32.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y7s0a"]
+size = Vector2(58, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ykqm0"]
 size = Vector2(18, 54)
@@ -501,16 +502,10 @@ autoplay = true
 position = Vector2(294.5, 541.25)
 shape = SubResource("RectangleShape2D_mlp5k")
 
-[node name="checkpoint2" type="Area2D" parent="." unique_id=343521280]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint2" unique_id=1453823121]
-position = Vector2(411, 507)
-shape = SubResource("RectangleShape2D_mlp5k")
-
 [node name="checkpoint3" type="Area2D" parent="." unique_id=1057698182]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoint3" unique_id=1349251443]
-position = Vector2(456, 508)
+position = Vector2(432, 512)
 shape = SubResource("RectangleShape2D_y7s0a")
 
 [node name="checkpoint4" type="Area2D" parent="." unique_id=1016455721]
@@ -625,7 +620,6 @@ shape = SubResource("RectangleShape2D_jeun1")
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="level_finished" to="CharacterBody2D/level-finished" method="_on_level_finished_body_entered"]
 [connection signal="body_entered" from="checkpoint1" to="." method="_on_checkpoint_1_body_entered"]
-[connection signal="body_entered" from="checkpoint2" to="." method="_on_checkpoint_2_body_entered"]
 [connection signal="body_entered" from="checkpoint3" to="." method="_on_checkpoint_3_body_entered"]
 [connection signal="body_entered" from="checkpoint4" to="." method="_on_checkpoint_4_body_entered"]
 [connection signal="body_entered" from="checkpoint5" to="." method="_on_checkpoint_5_body_entered"]
